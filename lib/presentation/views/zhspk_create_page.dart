@@ -171,7 +171,7 @@ class _ZhspkCreatePageState extends ConsumerState<ZhspkCreatePage> {
         final Map<String, String> credentials = await ref
             .read(zhspkViewModelProvider.notifier)
             .createChairPerson(
-          '25',
+          zhspkId,
           lastName,
           firstName,
         );
